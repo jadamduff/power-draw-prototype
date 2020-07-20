@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Power Scada Studio</title>
+    <link rel="stylesheet" type="text/css" href="src/css/main.css" />
+    <script src="bundle.js"></script>
+  </head>
+  <body>
+    <div class="main-wrapper" id="main-wrapper">
+      <div class="header-wrapper noselect">
+        <div class="header-left-container">
+            <div class="header-button-add" id="header-button-add">
+                ADD
+                <img src="./src/images/dropdown-arrow-gray-sm.svg" style="padding-left: 10px" />
+            </div>
+            <div class="header-group-divider"></div>
+          <div class="header-button-group">
+            <div class="header-button-container">
+              <div class="header-button-gray noselect" id="move-up-btn">
+                <img src="src/images/forward-icon.png" width="20" height="16" />
+              </div>
+            </div>
+            <div class="header-button-container">
+              <div class="header-button-gray noselect" id="move-down-btn">
+                <img src="src/images/backward-icon.png" width="20" height="16" />
+              </div>
+            </div>
+          </div>
+          <div class="header-group-divider"></div>
+          <div class="header-button-group">
+            <div class="header-button-container">
+              <div class="header-button-gray noselect" id="group-btn">
+                <img src="src/images/group-icon.png" width="20" height="19" />
+              </div>
+            </div>
+            <div class="header-button-container">
+              <div class="header-button-gray noselect" id="ungroup-btn">
+                <img src="src/images/ungroup-icon.png" width="21.71" height="19" />
+              </div>
+            </div>
+          </div>
+          <div class="header-group-divider"></div>
+          <div class="header-button-group">
+            <div class="header-button-container">
+              <div class="header-button-gray noselect">
+                <img src="src/images/edit-icon2.png" width="18" height="18" />
+              </div>
+            </div>
+            <div class="header-button-container">
+              <div class="header-button-gray noselect">
+                <img src="src/images/scale-icon.png" width="18" height="18" />
+              </div>
+            </div>
+          </div>
+          <div class="header-group-divider"></div>
+          <div class="header-button-group">
+              <div class="header-button-container">
+                <div class="header-button-gray noselect">
+                  <img src="src/images/union-icon.png" width="18" height="18" />
+                </div>
+              </div>
+              <div class="header-button-container">
+                <div class="header-button-gray noselect">
+                  <img src="src/images/subtract-icon.png" width="18" height="18" />
+                </div>
+              </div>
+              <div class="header-button-container">
+                <div class="header-button-gray noselect">
+                  <img src="src/images/intersect-icon.png" width="18" height="18" />
+                </div>
+              </div>
+              <div class="header-button-container">
+                <div class="header-button-gray noselect">
+                  <img src="src/images/difference-icon.png" width="18" height="18" />
+                </div>
+              </div>
+          </div>
+          <div class="header-group-divider"></div>
+          <div class="header-button-group">
+              <div class="header-button-container">
+                <div class="header-button-gray noselect">
+                  
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="header-right-container">
+            <div class="header-button-group">
+                <div class="header-button-container">
+                    <div class="header-button-gray noselect">
+                      <img src="src/images/play-icon.png" width="13.33" height="16"  style="margin: 0 0 0 4px"/>
+                    </div>
+                </div>
+                <div class="header-button-container">
+                  <div class="header-button-gray noselect">
+                    <img src="src/images/share-icon.png" width="21.6" height="14"/>
+                  </div>
+                </div>
+
+            </div>  
+          <div class="burger-dot-container">
+            <div class="burger-dot"></div>
+            <div class="burger-dot"></div>
+            <div class="burger-dot"></div>
+          </div>
+        </div>
+      </div>
+      <div class="main-content-wrapper">
+        <div class="left-panel">
+          <div class="left-panel-header project-title noselect">
+            <img src="src/images/project-icon.png" />Data Center 2234
+          </div>
+          <div class="left-panel-header page-title noselect">
+            <img src="src/images/page-icon.png" />Main Unit
+          </div>
+          <div class="left-panel-item noselect">
+            <img src="src/images/page-icon.png" />Breaker 1
+          </div>
+          <div class="left-panel-item noselect">
+            <img src="src/images/page-icon.png" />Breaker 2
+          </div>
+          <div class="left-panel-item noselect">
+            <img src="src/images/page-icon.png" />Breaker 3
+          </div>
+          <div class="left-panel-item noselect">
+            <img src="src/images/page-icon.png" />Transistor 1
+          </div>
+          <div class="left-panel-item noselect">
+            <img src="src/images/page-icon.png" />Transistor 2
+          </div>
+        </div>
+        <div class="canvas-container">
+          <div id="canvas-wrapper">
+
+          </div>
+        </div>
+        <div id="right-panel">
+          <div class="right-panel-container noselect" id="right-panel-container">
+            <div class="formatting-toolbar">Formatting options here</div>
+            <div class="right-panel-row">
+              <div class="row-split-3">
+                <div class="row-cell-a">
+                  <div class="absolute-center">
+                    <label for="x-pos" class="input-gray-label">X</label> <input type="text" class="input-gray text-right" name="x-pos" id="x-pos-input" />
+                  </div>
+                </div>
+                <div class="row-cell-b">
+                    <div class="absolute-center">
+                        <label for="y-pos" class="input-gray-label">Y</label> <input type="text" class="input-gray text-right" name="y-pos" id="y-pos-input" />
+                      </div>
+                </div>
+                <div class="row-cell-c">
+                    <div class="absolute-center">
+                        <label for="degs" class="input-gray-label" style="font-size: 18px">°</label> <input type="text" class="input-gray text-right" name="degs" />
+                      </div>
+                </div>
+              </div>
+            </div>
+            <div class="right-panel-row">
+              <div class="row-split-3">
+                  <div class="row-cell-a">
+                    <div class="absolute-center">
+                      <label for="width" class="input-gray-label">W</label> <input type="text" class="input-gray text-right" name="width" id="width-input" />
+                    </div>
+                  </div>
+                  <div class="row-cell-b">
+                      <div class="absolute-center">
+                          <label for="height" class="input-gray-label">H</label> <input type="text" class="input-gray text-right" name="height" id="height-input" />
+                        </div>
+                  </div>
+                  <div class="row-cell-c">
+                    <div class="button-gray-sm" style="margin-left: 3px"></div>
+                  </div>
+                </div>
+            </div>
+            <div class="right-panel-row-label">
+                BORDER RADIUS
+            </div>
+            <div class="right-panel-row">
+              Border Radius Slider
+            </div>
+            <div class="right-panel-row-label">
+                OPACITY
+              </div>
+            <div class="right-panel-row">
+                Opacity slider
+            </div>
+            <div class="right-panel-row-label">
+              FILL
+            </div>
+            <div class="right-panel-row">
+              <div class="row-split-3-center">
+                <div class="row-cell-a">
+                  <div class="button-gray-sm flexbox">
+                    <div class="color-picker-button" id="color-picker-button-fill"></div>
+                  </div>
+                </div>
+                <div class="row-cell-b">
+                  <input type="text" class="input-gray" name="color-input-fill" id="color-input-fill" />
+                </div>
+                <div class="row-cell-c">
+                  <input type="text" class="input-gray" name="color-opacity" />
+                </div>
+              </div>
+            </div>
+            <div class="right-panel-row-label">
+              BORDER
+            </div>
+            <div class="right-panel-row">
+              <div class="row-split-3-center">
+                <div class="row-cell-a">
+                  <div class="button-gray-sm flexbox">
+                    <div class="color-picker-button" id="color-picker-button-border"></div>
+                  </div>
+                </div>
+                <div class="row-cell-b">
+                  <input type="text" class="input-gray" name="color-input-border" id="color-input-border" />
+                </div>
+                <div class="row-cell-c">
+                  <div class="number-picker-gray">
+                      <input type="text" name="border-width" id="border-width-input" />
+                      <div class="number-picker-btn-container">
+                        <div class="up" id="border-width-up-btn">
+                          <img src="./src/images/up-btn.svg">
+                        </div>
+                        <div class="down" id="border-width-down-btn">
+                            <img src="./src/images/down-btn.svg">
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div id="test-color-picker-single-color">
+
+              </div>
+              <div id="test-color-picker-multi-color">
+              
+              </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

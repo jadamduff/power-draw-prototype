@@ -1,0 +1,49 @@
+{
+  "name": "power-scada-studio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose --no-cache",
+    "start": "webpack-dev-server"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(|ts|tsx)$": "ts-jest",
+      "^.+\\.(js)$": "babel-jest"
+    },
+    "transformIgnorePatterns": [],
+    "globals": {
+      "__TS_CONFIG__": {
+        "target": "es2015",
+        "module": "commonjs"
+      }
+    },
+    "testMatch": [
+      "**/__tests__/*.+(ts|tsx|js)"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^24.0.15",
+    "babel-plugin-transform-es2015-classes": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "brotli-gzip-webpack-plugin": "^0.5.0",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2",
+    "ts-loader": "^6.0.2",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.1"
+  },
+  "dependencies": {
+    "@webpack-cli/init": "^0.2.2",
+    "typescript": "^3.5.1",
+    "webpack": "^4.33.0"
+  }
+}
